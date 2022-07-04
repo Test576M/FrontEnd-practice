@@ -1,0 +1,615 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Open+Sans:wght@300;400&display=swap%27");
+* {
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;  
+}
+
+a {text-decoration: none;}
+ul {list-style-type: none;}
+/* ---------------BODY---------------- */
+body {
+  background-image: url(img/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: right -10vw top -14vw;
+}
+/* ---------------HEADER-------------- */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 13% 3% 13%;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0%;
+}
+header ul li {
+  padding: 1.1vw;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1vw;
+  line-height: 1.1vw;
+}
+header ul li a{
+  color: rgba(35, 44, 81) ;
+}
+header ul li a:hover{
+  color: rgb(143, 148, 167);
+}
+
+/*--con esto hago que se vea el logo en desktop y no el iconHamburger porque no queria hacerle otra clase aparte solo para un display:none--*/
+.logoHeaderMobile{
+  display:inline;
+}
+header img { 
+  display: none;
+}
+
+/*---caracteristicas del boton qeu aparece una bocha de veces--*/
+button {
+  height: 3rem;
+  width: 8rem;
+  border-radius: 2rem;
+
+  align-items: center;
+  border: none;
+  justify-content: center;
+  cursor: pointer;
+
+  background-color:rgba(242, 95, 58);
+  box-shadow: 1px 4px 3px rgba(231, 98, 64, 0.61);
+}
+button a {
+  color: white;
+}
+
+button:hover{
+  background-color:rgba(226, 164, 148, 0.637);
+  box-shadow: rgba(218, 184, 175, 0.2);
+}
+
+/* ----------------MAIN--------------- */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 4% 8% 4%;
+  background-image: url(img/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: left -25rem bottom 8rem;
+}
+/* ----------------------------- */
+.tituloTOpersonajes {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: center;
+  align-content: center;
+}
+/*---------separación en partes----*/
+.primeraParte {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50%;
+}
+
+.segundaParte {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50%;
+}
+/*---------FIN separación en partes----*/
+/*-----imagen derecha en desktop / imagen primera en mobile---*/
+.imagenDatosArriba {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.imagenDatosArriba img {
+  width: 33rem;
+}
+
+/*----primer titulo izquierda desktop/P. T. seguido de imagen primera mobile-----*/
+
+.bringEveryOne {
+  width: 40%;
+}
+
+.bringEveryOne h2 {
+  color: rgba(35, 44, 81);
+  font-weight: 700;
+  font-size: 58px;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  width: 90%;
+}
+
+.bringEveryOne p {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 4%;
+  width: 71%;
+  line-height: 150%;
+  color: rgb(143, 148, 167);
+}
+
+/*-----segundo titulo izquierda desktop/S. T. seguido de P. T. mobile------*/
+.whatsDifferent {
+  width: 40%;
+}
+
+.whatsDifferent h3 {
+  color: rgba(35, 44, 81);
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 115%;
+  width: 75%;
+  margin-bottom: 5%;
+}
+
+.whatsDifferent p {
+  font-weight: 500;
+  font-size: 16px;
+  width: 65%;
+  line-height: 150%;
+  color: rgb(143, 148, 167);
+}
+/*--------- lista seguida de todo y antes de pre footerCosas---*/ 
+.listaAbajo {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.caracteristicas {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.listaAbajotitulo {
+  display: flex;
+}
+
+.listaAbajotitulo p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  border: none;
+  background-color:rgba(242, 95, 58, 1);
+  color:white;
+  height: 2.5rem;
+  width: 4.3rem;
+}
+
+.listaAbajotitulo h4 {
+  margin: 1% 0 1% 2%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2rem;
+  color: rgba(35, 44, 81);
+}
+
+.listaAbajotexto {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: rgb(143, 148, 167);
+  width: 90%;
+  margin-left: 15%;
+}
+/* ------------------ / PERSONAJES------------- */
+
+/*---contenedor principal---*/
+.todosLosPersonajes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.todosLosPersonajes h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 155%;
+  color: rgba(35, 44, 81);
+}
+
+.personajes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cajaDePersonajes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7% 0 5% 0;
+  background: #fafafa;
+  height: 13rem;
+  width: 27rem;
+}
+
+.cajaDePersonajes img {
+  position: relative;
+  bottom: 15%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.cajaDePersonajes h5 {
+  position: relative;
+  bottom: 8%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 155%;
+  color: #3f4868;
+}
+
+.cajaDePersonajes p {
+  text-align: center;
+  width: 88.5%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 155%;
+  color: rgb(143, 148, 167);
+}
+/* -----------------PRE FOOTER--------------- */
+.preFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 3.5rem;
+
+  background-color:rgba(242, 95, 58, 1);
+
+  background-image: url(img/bg-simplify-section-desktop.svg);
+  background-repeat: no-repeat;
+  background-position:right -240px bottom 0px;
+}
+
+.preFooter h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color:white;
+  width: 45%;
+}
+
+.botonPreFooter {
+  background-color: rgba(35, 44, 81);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25) ;
+  color: white;
+}
+
+.botonPreFooter:hover{
+  background-color:white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); 
+  color:rgba(242, 95, 58, 1);
+}
+
+
+/*-------------FOOTER------------*/
+.footerCosas {
+  background-color: rgba(29, 30, 37, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 10% 5% 10%;
+}
+
+
+.copyrightMobile {
+  display: none;
+}
+
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.listaFooter {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+/*----iconos footer// los atributos estan así para que los tome bien.-----*/
+.iconos {
+  font-size: 4rem;
+}
+.iconos a {
+  color:white;
+}
+.iconos i {
+  padding: 5px;
+}
+
+.iconos i:hover {
+  color:rgba(242, 95, 58, 1);
+  cursor: pointer;
+}
+/*---fin iconos footer----*/
+
+/*---footer parte izquierda /  lista--- */
+.footerCosas ul li {
+  padding: 5px;
+}
+
+.footerCosas div ul li a{
+  color: white;
+}
+
+.footerCosas div ul li a:hover{
+  color:rgba(242, 95, 58, 1);
+}
+/*--- fin footer parte izquierda / lista ---*/
+
+/*--- llenar email, boton GO y copyright--*/
+.derechaFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.formulario {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 280px;
+}
+
+.inputEmail {
+  border: none;
+  border-radius: 30px;
+  height: 50px;
+  width: 200px;
+}
+
+
+.botonInput {
+  height: 2.5rem;
+  width: 4.5rem;
+  border-radius: 2rem;
+  box-shadow: none;
+  color:white;
+}
+
+.botonInput:hover{
+  background-color:white;
+  color:rgba(242, 95, 58, 1);
+}
+
+.footerCosas h6 { /*--copyright text--*/
+  color: rgb(143, 148, 167);
+  font-weight: 500;
+  font-size: 12.5px;
+  padding-left: 3.4rem;
+}
+/*-------------------------------------------------------- */
+/*-------------------------------------------------------- */
+/* ---------------------RESPONSIVE------------------------ */
+@media screen and (min-width:320px) and (max-width:425px){
+  body {
+    width: 100%;
+    background-size: 128vw;
+    background-position: top -5rem left 2rem;
+  }
+  /* --------------HEADER--------------- */
+  header {
+    justify-content: space-between;
+    padding: 15% 5% 15% 5%;
+  }
+  .logoHeaderMobile {
+    width: 32vw;
+    position: relative;
+    top: 0.3rem;
+  }
+  header ul {
+    display: none;
+  }
+  header button {
+    display: none;
+  }
+  header img {
+    display: block;
+  }
+  /* ----------------------MAIN--------------------- */
+  main {
+    width: 100%;
+    padding: 0 0 0 0;
+    background-size: contain;
+    background-position: top 140vw left 75vw;
+  }
+  /* ---------------BLOQUE 1------------ */
+  .tituloTOpersonajes {
+    height: fit-content;
+    width: 100%;
+  }
+/*-----llevando imagenDatos seguido bringEveryOne para arriba-----*/
+  .primeraParte {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+/*--imagen--*/
+  .imagenDatosArriba {
+    width: 100%;
+  }
+  .imagenDatosArriba img {
+    width: 100%;
+  }
+
+/*--texto--*/
+  .bringEveryOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .bringEveryOne h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .bringEveryOne p {
+    text-align: center;
+    width: 90%;
+    line-height: 2rem;
+  }
+  .bringEveryOne button {
+    margin: 2% 0 30% 0;
+  }
+
+/*-------llevando WhatsDifferent seguido de la lista,,, despúes de img&&bring-----*/
+  .segundaParte {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+/*--texto--*/
+  .whatsDifferent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .whatsDifferent h3 {
+    text-align: center;
+    line-height: 3rem;
+  }
+  .whatsDifferent p {
+    text-align: center;
+    line-height: 2rem;
+    width: 90%;
+    margin-bottom: 15%;
+  }
+/*--lista--*/
+  .listaAbajo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .listaAbajotitulo {
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255, 239, 234);
+    border-radius: 2rem 0 0 2rem;
+    margin-left: 1.5rem;
+  }
+
+  .listaAbajotexto {
+    margin: 0;
+    width: 93%;
+    line-height: 2rem;
+    padding: 4% 0 15% 0;
+    text-align: left;
+  }
+  /* ---------------PERSONAJES------------------ */
+  .todosLosPersonajes h4 {
+    font-size: 35px;
+    margin-bottom: 15%;
+  }
+  .personajes {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 54rem;
+  }
+  .cajaDePersonajes {
+    width: 100%;
+    height: 28%;
+  }
+  .todosLosPersonajes button {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+
+  /* ------------------PRE FOOTER----------------- */
+  .preFooter {
+    flex-direction: column;
+    padding: 20% 5% 20% 5%;
+    background-image: url(img/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+
+  .preFooter h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .preFooter button{
+    background-color: white;
+    color:rgba(242, 95, 58, 1) ;
+  }
+
+/*---------------FOOTER ---------*/
+  .footerCosas {
+    height: 30rem;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+/*---aca lo que antes era parte derecha footer---*/
+.formulario {
+  width: 100%;
+}
+/*---lista--*/
+.listaFooter {
+  width: 100%;
+  height: 10rem;
+}
+.listaFooter ul {
+  padding-left: 6%;
+}
+.listaFooter ul li {
+  padding: 0.7rem 0;
+}
+/*---lo que era parte izquierda footer AHORA seria parte abajo footer--*/
+  .imagenes {
+    height: 7rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .iconos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 2.5rem;
+  }
+/*--ultimo de todo--*/
+  .logoFooter a {
+    margin: 3rem 0 1rem 0;
+  }
+  .derechaFooter h6 {
+    display: none;
+  }
+  .copyrightMobile {
+    display: block;
+    text-align: center;
+    padding:1vw ;
+  }
+}
